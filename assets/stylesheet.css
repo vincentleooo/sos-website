@@ -293,10 +293,14 @@ nav ul {
     width: 60%;
     height: 60%;
   }
+  .section {
+    margin-bottom: 8rem;
+  }
 }
 
 .jobs {
   max-width: 1080px;
+  width: 90%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -314,4 +318,16 @@ nav ul {
 
 .jobs * {
   text-align: left;
+}
+
+@media (max-width: 720px) {
+  .jobs {
+    grid-template-columns: 1fr;
+  }
+  .job h3 {
+    font-size: 1.5rem;
+  }
+  .job h4 {
+    font-size: 1.2rem;
+  }
 }
